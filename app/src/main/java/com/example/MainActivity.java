@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
 
         // MultipartBody.Part is used to send also the actual file name
         MultipartBody.Part MultipartFile =
-                MultipartBody.Part.createFormData("picture", file.getName(), requestFile);
+                MultipartBody.Part.createFormData("image", file.getName(), requestFile);
 
 
         NetWorkMangager.instance().create(ApiService.class)
